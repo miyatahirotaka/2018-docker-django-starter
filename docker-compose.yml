@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:10.6
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=your-name
+      - POSTGRES_PASSWORD=your-password
+    ports:
+      - "5432:5432"
+  web:
+    build: .
+    command: python3 manage.py runserver 0.0.0.0:8000
+    depends_on:
+      - "db"
+    volumes:
+      - ./src/your-django-project:/code
+      - ./static:/static
+    ports:
+      - "8000:8000"
