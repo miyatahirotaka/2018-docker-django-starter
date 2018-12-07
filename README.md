@@ -1,4 +1,4 @@
-This repository is for building **Docker + Python3.7.1 + Django + PostgreSQL10.6** environment.
+This repository is for building **Docker + Python3.7.1 + PostgreSQL10.6** environment.
 
 ### Clone this repository and your django project
 ```
