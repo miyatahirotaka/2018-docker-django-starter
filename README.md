@@ -3,6 +3,7 @@ This repository is for building **Docker + Python3.7.1 + PostgreSQL10.6** enviro
 ### Clone this repository and your django project
 ```
 git clone https://github.com/miyatahirotaka/2018-docker-django-starter my_django_project
+cd my_django_project
 mkdir src
 cd src
 git clone https://github.com/your-django-project
